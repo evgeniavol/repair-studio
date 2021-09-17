@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&amp;family=Roboto&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-wrapper">
+                <div class="logo">
+                    <a class="logo__img" href="index.html">
+                        <img src="images/header/logo.svg" alt="logo"></a>
+                    <div class="logo__title logo__title-black">Remont</div>
+                </div>
+                <div class="burger-btn">
+                    <div class="burger-line _first"></div>
+                    <div class="burger-line _second"></div>
+                    <div class="burger-line _third"></div>
+                    <div class="burger-line _fourth"></div>
+                </div>
+
+                <ul class="top-menu">
+                    <li class="top-link"><a href="#portfolio">Портфолио</a></li>
+                    <li class="top-link"><a href="#prices">Цены</a></li>
+                    <li class="top-link"><a href="#reviews">Отзывы</a></li>
+                    <li class="top-link"><a href="#contacts">Контакты</a></li>
+                    <li class="top-link"><a class="none" href="tel:+74993981882">+7 499 398 18 82</a></li>
+                </ul>
+                <div class="contacts">
+                    <a class="contacts__tel" href="tel:+74993981882">+7 499 398 18 82</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero hero-bg">
+            <div class="container">
+                <div class="hero-block">
+                    <div class="hero-text">
+                        <h1 class="hero-text__title">Делаем ремонт квартир, домов и офисов по дизайн-проекту</h1>
+                        <span class="hero-text__subtitle">В Москве и Московской области</span>
+                        <ul class="hero-list">
+                            <li class="hero-list__item">
+                                <div class="hero-list__image">
+                                    <img src="images/hero/roller.svg" alt="roller"></div>
+                                <div class="hero-list__text">Цены<br>от 2 000 руб/м</div>
+                            </li>
+                            <li class="hero-list__item">
+                                <div class="hero-list__image">
+                                    <img src="images/hero/centimeter.svg" alt="centimeter"></div>
+                                <div class="hero-list__text">Делаем с нуля до полной сдачи</div>
+                            </li>
+                            <li class="hero-list__item">
+                                <div class="hero-list__image">
+                                    <img src="images/hero/spatula.svg" alt="spatula"></div>
+                                <div class="hero-list__text">Гарантия по договору</div>
+                            </li>
+                            <li class="hero-list__item">
+                                <div class="hero-list__image">
+                                    <img src="images/hero/paintbrush.svg" alt="paintbrush"></div>
+                                <div class="hero-list__text">Сделали ремонт в 300 объектах</div>
+                            </li>
+                        </ul>
+                        <button class="button hero-button" data-popup="Рассчитать стоимость">Рассчитать
+                            стоимость</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="prices">
+            <div class="container">
+                <h2 id="prices" class="prices-title section-heading">Услуги и цены</h2>
+                <div class="prices-text section-text">Чаще всего, чтобы рассчитать стоимость ремонта нужен точный замер
+                    помещения, но вы можете ориентироваться на цены, указанные на сайте</div>
+                <div class="prices-cards">
+                    <div class="card-block">
+                        <div class="card-img">
+                            <img src="images/prices/redecorating.jpg" alt="Косметический ремонт">
+                        </div>
+                        <div class="card-descr">
+                            <div class="card-title">Косметический ремонт</div>
+                            <div class="card-text">2 000 руб/м<sup>2</sup></div>
+                            <ul class="card-list">
+                                <li class="card-item">консультация специалиста</li>
+                                <li class="card-item">оклейка стен обоями или покраска</li>
+                                <li class="card-item">укладка покрытия на пол</li>
+                                <li class="card-item">замена розеток и выключателей</li>
+                                <li class="card-item">установка сантехники</li>
+                                <li class="card-item">покраска потолков</li>
+                                <li class="card-item">покраска труб, радиаторов</li>
+                            </ul>
+                            <button class="card-button button" data-popup="Рассчитать стоимость">Рассчитать
+                                стоимость</button>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <div class="card-img">
+                            <img src="images/prices/overhaul.jpg" alt="Капитальный ремонт">
+                        </div>
+                        <div class="card-descr">
+                            <div class="card-title">Капитальный ремонт</div>
+                            <div class="card-text">4 000 руб/м<sup>2</sup></div>
+                            <ul class="card-list">
+                                <li class="card-item">косметический ремонт, плюс:</li>
+                                <li class="card-item">выравнивание и шпатлевка стен</li>
+                                <li class="card-item">выравнивание полов</li>
+                                <li class="card-item">выравнивание потолков</li>
+                                <li class="card-item">разводка электропроводки</li>
+                                <li class="card-item">разводка сантехнических труб</li>
+                                <li class="card-item">укладка плитки в санузлах</li>
+                            </ul>
+                            <button class="card-button button" data-popup="Рассчитать стоимость">Рассчитать
+                                стоимость</button>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <div class="card-img">
+                            <img src="images/prices/european.jpg" alt="Европейский ремонт">
+                        </div>
+                        <div class="card-descr">
+                            <div class="card-title">Европейский ремонт</div>
+                            <div class="card-text">6 000 руб/м<sup>2</sup></div>
+                            <ul class="card-list">
+                                <li class="card-item">капитальный ремонт, плюс:</li>
+                                <li class="card-item">двухуровневые потолки из гипсокартона или натяжные устройство
+                                    потолков
+                                    в санузлах укладка паркетной доски и тд устройство теплых полов</li>
+                            </ul>
+                            <button class="card-button button" data-popup="Рассчитать стоимость">Рассчитать
+                                стоимость</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="projects">
+            <div class="container">
+                <h2 class="projects-title section-heading">Завершенные проекты</h2>
+                <div class="projects-text section-text">Мы сделали ремонт трехсот квартир, посмотрите часть из этих
+                    проектов. Тут лишь часть, потому что иногда клиенты не дают согласие на показ их квартир в нашем
+                    портфолио.</div>
+
+                <div class="swiper-container projects-slider">
+                    <div class="swiper-wrapper">
+                        <!-- slide 1 -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="slider-img">
+                                <img class="slider-image" src="images/projects/1.jpg" alt="Квартира на Адоратского">
+                            </div>
+                            <div class="slider-feedback">
+                                <h3 class="slider-title">Квартира на Адоратского</h3>
+                                <div class="slider-features">Площадь: <span class="slider-features--color">55
+                                        кв.м</span>
+                                </div>
+                                <div class="slider-features">Срок ремонта: <span class="slider-features--color">40
+                                        дней</span></div>
+                                <div class="slider-features">Цена: <span class="slider-features--color">620 000
+                                        рублей</span></div>
+
+                                <div class="slider-reviews">
+                                    <h4 class="slider-reviews-subtitle">Отзыв клиента</h4>
+                                    <div class="slider-reviews-text">Благодарю команду “Remont” за слаженную работу.
+                                        Cдали
+                                        квартиру чистой, без задержек. Пока шел ремонт нам показывали процесс через
+                                        WhatsApp, это удобно.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ slide 1 -->
+                        <!--  slide 2 -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="slider-img">
+                                <img class="slider-image" src="images/projects/2.jpg" alt="Квартира на Семёновской">
+                            </div>
+                            <div class="slider-feedback">
+                                <h3 class="slider-title">Квартира на Семёновской</h3>
+                                <div class="slider-features">Площадь: <span class="slider-features--color">72
+                                        кв.м</span>
+                                </div>
+                                <div class="slider-features">Срок ремонта: <span class="slider-features--color">50
+                                        дней</span></div>
+                                <div class="slider-features">Цена: <span class="slider-features--color">500 000
+                                        рублей</span></div>
+                                <div class="slider-reviews">
+                                    <h4 class="slider-reviews-subtitle">Отзыв клиента</h4>
+                                    <div class="slider-reviews-text">Благодарю команду “Remont” за слаженную работу.
+                                        Cдали
+                                        квартиру чистой, без задержек. Пока шел ремонт нам показывали процесс через
+                                        WhatsApp, это удобно.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ slide 2 -->
+                        <!-- slide 3 -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="slider-img">
+                                <img class="slider-image" src="images/projects/3.jpg"
+                                    alt="Квартира на Электрозаводской">
+                            </div>
+
+                            <div class="slider-feedback">
+                                <h3 class="slider-title">Квартира на Электрозаводской</h3>
+                                <div class="slider-features">Площадь: <span class="slider-features--color">75
+                                        кв.м</span>
+                                </div>
+                                <div class="slider-features">Срок ремонта: <span class="slider-features--color">50
+                                        дней</span></div>
+                                <div class="slider-features">Цена: <span class="slider-features--color">750 000
+                                        рублей</span></div>
+
+                                <div class="slider-reviews">
+                                    <h4 class="slider-reviews-subtitle">Отзыв клиента</h4>
+                                    <div class="slider-reviews-text">Благодарю команду “Remont” за слаженную работу.
+                                        Cдали
+                                        квартиру чистой, без задержек. Пока шел ремонт нам показывали процесс через
+                                        WhatsApp, это удобно.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ slide 3 -->
+                        <!-- slide 4 -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="slider-img">
+                                <img class="slider-image" src="images/projects/4.jpg" alt="Квартира на Бауманской">
+                            </div>
+                            <div class="slider-feedback">
+                                <h3 class="slider-title">Квартира на Бауманской</h3>
+                                <div class="slider-features">Площадь: <span class="slider-features--color">75
+                                        кв.м</span>
+                                </div>
+                                <div class="slider-features">Срок ремонта: <span class="slider-features--color">50
+                                        дней</span></div>
+                                <div class="slider-features">Цена: <span class="slider-features--color">750 000
+                                        рублей</span></div>
+
+                                <div class="slider-reviews">
+                                    <h4 class="slider-reviews-subtitle">Отзыв клиента</h4>
+                                    <div class="slider-reviews-text">Благодарю команду “Remont” за слаженную работу.
+                                        Cдали
+                                        квартиру чистой, без задержек. Пока шел ремонт нам показывали процесс через
+                                        WhatsApp, это удобно.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ slide 4 -->
+                        <!-- slide 5 -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="slider-img">
+                                <img class="slider-image" src="images/projects/5.jpg" alt="Квартира на Десантная">
+                            </div>
+                            <div class="slider-feedback">
+                                <h3 class="slider-title">Квартира на Десантная</h3>
+                                <div class="slider-features">Площадь: <span class="slider-features--color">75
+                                        кв.м</span>
+                                </div>
+                                <div class="slider-features">Срок ремонта: <span class="slider-features--color">50
+                                        дней</span></div>
+                                <div class="slider-features">Цена: <span class="slider-features--color">750 000
+                                        рублей</span></div>
+
+                                <div class="slider-reviews">
+                                    <h4 class="slider-reviews-subtitle">Отзыв клиента</h4>
+                                    <div class="slider-reviews-text">Благодарю команду “Remont” за слаженную работу.
+                                        Cдали
+                                        квартиру чистой, без задержек. Пока шел ремонт нам показывали процесс через
+                                        WhatsApp, это удобно..</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ slide 5 -->
+                    </div>
+                    <!-- swiper-wrapper -->
+                    <div class="slider-pagination"></div>
+                </div>
+                <!-- swiper-container -->
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="features-title section-heading">С нами выгодно работать</h2>
+                <div class="features-text section-text">Уверены, что вы сравниваете параллельно несколько компаний и
+                    выберите тех, кто предложит вам лучшие условия. Мы расскажем, почему вам стоит работать именно с
+                    нами.
+                </div>
+                <div class="features-block">
+                    <div class="feature-item">
+                        <div class="feature-image">
+                            <img src="images/features/money.png" width="70" height="80" alt="Выгодные цены">
+                        </div>
+
+                        <div class="feature-descr">
+                            <h3 class="feature-title">Выгодные цены</h3>
+                            <p class="feature-text">Цены на ремонт начинаются от 1500 рублей за квадратный метр</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">
+                            <img src="images/features/warranty.png" width="70" height="80" alt="Даем гарантию 5 лет">
+                        </div>
+                        <div class="feature-descr">
+                            <h3 class="feature-title">Даем гарантию 5 лет</h3>
+                            <p class="feature-text">Гарантия на ремонтные работы прописана в договоре</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">
+                            <img src="images/features/Mechanic.png" width="70" height="80" alt="Опытные мастера">
+                        </div>
+                        <div class="feature-descr">
+                            <h3 class="feature-title">Опытные мастера</h3>
+                            <p class="feature-text">У нас работают люди с опытом работы от 5 лет, других не берем</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">
+                            <img src="images/features/tasks.png" width="70" height="80" alt="Соблюдаем сроки">
+                        </div>
+                        <div class="feature-descr">
+                            <h3 class="feature-title">Соблюдаем сроки</h3>
+                            <p class="feature-text">Платим штраф, если сдали проект невовремя по нашей вине</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">
+                            <img src="images/features/cleaning-tools.png" width="70" height="80"
+                                alt="Убираем после себя">
+                        </div>
+                        <div class="feature-descr">
+                            <h3 class="feature-title">Убираем после себя</h3>
+                            <p class="feature-text">Оставляем квартиру и подъезд чистыми после ремонта</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">
+                            <img src="images/features/vanish.png" width="70" height="80" alt="Качественные материалы">
+                        </div>
+
+                        <div class="feature-descr">
+                            <h3 class="feature-title">Качественные материалы</h3>
+                            <p class="feature-text">Знаем, какие материалы подойдут больше всего независимо от цены</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">
+                            <img src="images/features/architect.png" width="70" height="80" alt="Закрепляем инженера">
+                        </div>
+                        <div class="feature-descr">
+                            <h3 class="feature-title">Закрепляем инженера</h3>
+                            <p class="feature-text">К каждому объекту закреплен инженер, который следит за работой</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">
+                            <img src="images/features/noise.png" width="70" height="80" alt="Соблюдаем тишину">
+                        </div>
+                        <div class="feature-descr">
+                            <h3 class="feature-title">Соблюдаем тишину</h3>
+                            <p class="feature-text">Не шумим раньше 7.00 и после 22.00 Тихо работаем в обед, когда тихий
+                                час
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">
+                            <img src="images/features/checklist.png" width="70" height="80"
+                                alt="Контроль на каждом этапе">
+                        </div>
+                        <div class="feature-descr">
+                            <h3 class="feature-title">Контроль на каждом этапе</h3>
+                            <p class="feature-text">Вы можете следить за ремонтом через веб-камеру со смартфона через
+                                сайт
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="present">
+            <div class="container">
+                <div class="present-wrapper">
+                    <div class="present-descr">
+                        <div class="present-title">Получите в подарок дизайн-проект </div>
+                        <div class="present-text">Оставьте заявку, чтобы к вам мог выехать замерщик. Когда он закончит
+                            снимать
+                            мерки, он подарит вам сертификат на бесплатный дизайн-проект квартиры
+                        </div>
+                        <button class="present-button button" data-popup="Получить подарок">Получить подарок</button>
+                    </div>
+                    <div class="present-images">
+                        <img class="present-img" src="images/free/free-image.png" alt="Макет">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews" class="feedback">
+            <div class="container">
+                <h2 class="feedback-title section-heading">Отзывы наших клиентов</h2>
+                <div class="feedback-text section-text">Прочитайте, что пишут о нас те, кто уже заказал ремонт в нашей
+                    компании. Мы собираем отзывы не сразу после ремонта, а спустя месяц после заселения в квартиру,
+                    чтобы
+                    отзыв был честным.</div>
+                <div class="swiper-container projects-slider">
+                    <div class="swiper-wrapper">
+                        <!-- slide 1 -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="slider-img">
+                                <img class="slider-image" src="images/feedback/1.jpg" alt="Квартира на Адоратского">
+                            </div>
+                            <div class="slider-feedback">
+                                <h3 class="slider-title">Квартира на Адоратского</h3>
+                                <div class="slider-features">Площадь: <span class="slider-features--color">85
+                                        кв.м</span>
+                                </div>
+                                <div class="slider-features">Срок ремонта: <span class="slider-features--color">60
+                                        дней</span></div>
+                                <div class="slider-features">Цена: <span class="slider-features--color">650 000
+                                        рублей</span></div>
+
+                                <div class="slider-reviews">
+                                    <h4 class="slider-reviews-subtitle">Отзыв клиента</h4>
+                                    <div class="slider-reviews-text">Благодарю команду “Remont” за слаженную работу.
+                                        Cдали
+                                        квартиру чистой, без задержек. Пока шел ремонт нам показывали процесс через
+                                        WhatsApp, это удобно.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ slide 1 -->
+                        <!--  slide 2 -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="slider-img">
+                                <img class="slider-image" src="images/feedback/2.jpg" alt="Квартира на Колмогоровой">
+                            </div>
+                            <div class="slider-feedback">
+                                <h3 class="slider-title">Квартира на Колмогоровой</h3>
+                                <div class="slider-features">Площадь: <span class="slider-features--color">75
+                                        кв.м</span>
+                                </div>
+                                <div class="slider-features">Срок ремонта: <span class="slider-features--color">55
+                                        дней</span></div>
+                                <div class="slider-features">Цена: <span class="slider-features--color">590 000
+                                        рублей</span></div>
+
+                                <div class="slider-reviews">
+                                    <h4 class="slider-reviews-subtitle">Отзыв клиента</h4>
+                                    <div class="slider-reviews-text">Благодарю команду “Remont” за слаженную работу.
+                                        Cдали
+                                        квартиру чистой, без задержек. Пока шел ремонт нам показывали процесс через
+                                        WhatsApp, это удобно.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ slide 2 -->
+                        <!-- slide 3 -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="slider-img">
+                                <img class="slider-image" src="images/feedback/3.jpg" alt="Квартира на Дорожной">
+                            </div>
+                            <div class="slider-feedback">
+                                <h3 class="slider-title">Квартира на Дорожной</h3>
+                                <div class="slider-features">Площадь: <span class="slider-features--color">75
+                                        кв.м</span>
+                                </div>
+                                <div class="slider-features">Срок ремонта: <span class="slider-features--color">60
+                                        дней</span></div>
+                                <div class="slider-features">Цена: <span class="slider-features--color">700 000
+                                        рублей</span></div>
+
+                                <div class="slider-reviews">
+                                    <h4 class="slider-reviews-subtitle">Отзыв клиента</h4>
+                                    <div class="slider-reviews-text">Благодарю команду “Remont” за слаженную работу.
+                                        Cдали
+                                        квартиру чистой, без задержек. Пока шел ремонт нам показывали процесс через
+                                        WhatsApp, это удобно.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ slide 3 -->
+                        <!-- slide 4 -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="slider-img">
+                                <img class="slider-image" src="images/feedback/4.jpg" alt="Квартира на Лесной">
+                            </div>
+                            <div class="slider-feedback">
+                                <h3 class="slider-title">Квартира на Лесной</h3>
+                                <div class="slider-features">Площадь: <span class="slider-features--color">60
+                                        кв.м</span>
+                                </div>
+                                <div class="slider-features">Срок ремонта: <span class="slider-features--color">50
+                                        дней</span></div>
+                                <div class="slider-features">Цена: <span class="slider-features--color">500 000
+                                        рублей</span></div>
+
+                                <div class="slider-reviews">
+                                    <h4 class="slider-reviews-subtitle">Отзыв клиента</h4>
+                                    <div class="slider-reviews-text">Благодарю команду “Remont” за слаженную работу.
+                                        Cдали
+                                        квартиру чистой, без задержек. Пока шел ремонт нам показывали процесс через
+                                        WhatsApp, это удобно.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ slide 4 -->
+                        <!-- slide 5 -->
+                        <div class="swiper-slide projects-slide">
+                            <div class="slider-img">
+                                <img class="slider-image" src="images/feedback/5.jpg" alt="Квартира на Снежной">
+                            </div>
+                            <div class="slider-feedback">
+                                <h3 class="slider-title">Квартира на Снежной</h3>
+                                <div class="slider-features">Площадь: <span class="slider-features--color">55
+                                        кв.м</span>
+                                </div>
+                                <div class="slider-features">Срок ремонта: <span class="slider-features--color">30
+                                        дней</span></div>
+                                <div class="slider-features">Цена: <span class="slider-features--color">450 000
+                                        рублей</span></div>
+
+                                <div class="slider-reviews">
+                                    <h4 class="slider-reviews-subtitle">Отзыв клиента</h4>
+                                    <div class="slider-reviews-text">Благодарю команду “Remont” за слаженную работу.
+                                        Cдали
+                                        квартиру чистой, без задержек. Пока шел ремонт нам показывали процесс через
+                                        WhatsApp, это удобно.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./ slide 5 -->
+                    </div>
+
+                    <div class="slider-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="questions question_bg">
+            <div class="container">
+                <h2 class="questions-title section-heading">Частые вопросы клиентов</h2>
+                <div class="questions-text section-text">Знаем, что на все вопросы не ответить на сайте, но возможно, мы
+                    уже
+                    знаем, о чем Вы хотите спросить. Кликните на вопрос, чтобы раскрылся ответ на него.</div>
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__title">Как быстро Вы сможете рассчитать стоимость ремонта?</div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <p>Обычно, чтобы рассчитать смету по ременту, нужны точные замеры. У нас это делает
+                                    специальный человек — замерщик. Он приезжает на объект, делает замеры, заносит их в
+                                    специальную программу и уже через 5 минут, после снятия всех замеров, он может
+                                    озвучить
+                                    конечную стоимость ремонта, включая стоимость материалов. Если где-то вам обещают
+                                    назвать цену сразу после того, как Вы оставите заявку на сайте, будьте уверены, что
+                                    эта
+                                    цена поменяется несколько раз до заключения договора. А может и после договора
+                                    ценник
+                                    поползет вверх, будьте осторожны.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <div class="accordion__title">Какие материалы Вы используете для ремонта?</div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <p>Мы используем быть экологичные, нетоксичные и безопасные для здоровья материалы.
+                                    Поэтому
+                                    мы применяем гипоаллергенные материалы. Выбираем материалы в зависимости от
+                                    индивидуальных качеств клиента: у каждого заложен разный бюджет на ремонт.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">У вас работают лица без гражданства РФ?</div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <p>Нет. Мы нанимаем только лиц с опытом работы от пяти лет, обязательно имеющих
+                                    гражданство
+                                    РФ.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">Есть ли у вас рассрочка на ремонт?</div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <p>Можно воспользоваться услугами нашей организации в рассрочку. Вы оплачиваете часть от
+                                    стоимости всех работ по факту выполненных работ, а вторую половину оформляете в
+                                    рассрочку на четыре месяца без процентов и переплат!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">Что будет, если Вы задержите срок сдачи квартиры?</div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <p>Такого у нас никогда не было, но на всякий случай в договоре прописывается неустойка.
+                                    За
+                                    каждый просроченный день платим 0,5% в день от всей суммы ремонта.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">Как долго Вы будете делать дизайн-проект ремонта?</div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <p>Разработка дизайн-проекта осуществляется до начала ремонтных работ и занимает 2–3
+                                    месяца.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">Можно ли посмотреть ваши текущие объекты ремонта?</div>
+                        <div class="accordion__body">
+                            <div class="accordion__content">
+                                <p>Вы можете приехать на один из наших объектов и лично посмотреть процесс ремонта.
+                                    Подробнее уточняйте по телефону. +7 499 398 18 82</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="callback">
+            <div class="container">
+                <div class="callback-wrapper">
+                    <div class="callback-image">
+                        <img src="images/callback/callback-img.png" alt="Phone">
+                    </div>
+                    <div class="callback-descr">
+                        <h2 class="callback-title section-heading">Если остались вопросы</h2>
+                        <div class="callback-text section-text">оставьте нам свои контакты, мы перезвоним и ответим.
+                            Обещаем
+                            не
+                            забрасывать вас рекламными рассылками и спамом, если вдруг вы закажите ремонт не у нас. Мы
+                            уважаем
+                            вас.</div>
+                        <button class="callback-button button" data-popup="Задать вопрос">Задать вопрос</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-map">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2ccc9a59a523273b61271609252ca864726343f7d8a079a2e4af7ab9b7d26b3d&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false">
+                </script>
+            </div>
+            <div id="contacts" class="footer-info">
+                <div class="footer-info__descr">
+                    <div class="footer-title">Позвоните нам или приходите в офис</div>
+                    <div class="footer-address">Москва, Проспект Мира 64, офис 205, 2 этаж налево</div>
+                    <div class="footer-shedule">Режим работы в будни с 9.00 до 20.00</div>
+                    <div class="footer-tel">
+                        <a href="tel:+74993981882">8 499 398-18-82</a>
+                    </div>
+                    <button class="footer-button button" data-popup="Заказать звонок">Заказать звонок</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-descr">
+            <div class="footer-logo logo">
+                <a class="logo__img" href="index.html">
+                    <img src="images/footer/logo-light.svg" alt="logo"></a>
+                <div class="logo__title">Remont</div>
+            </div>
+            <div class="footer-copyright">
+                <a class="copyright" href="#!">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-contacts">
+                <a href="tel:+74993981882">+7 499 398 18 82</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal">
+        <div class="modal-block">
+            <div class="modal-close modal-close_close">&times;</div>
+            <div class="modal-block__title">Оставьте свои данные, наш менеджер свяжется с Вами</div>
+            <div class="modal-block__image"></div>
+
+            <form action="#" class="modal-block__form" id="modal-form">
+                <input type="text" name="username" class="modal-block__form-input" placeholder="Ваше имя">
+                <input type="tel" name="phone" id="tel" class="modal-block__form-input tel" placeholder="Ваш  телефон">
+                <button class="button modal-button modal-answer" data-popup="Рассчитать стоимость">Рассчитать
+                    стоимость</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

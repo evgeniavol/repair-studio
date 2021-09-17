@@ -1,0 +1,165 @@
+/* -- Header -- */
+.header {
+    padding-top: 20px;
+    z-index: 9999;
+}
+
+.nav-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.top-link {
+    border-bottom: 2px solid transparent;
+    padding: 20px 0;
+}
+
+.top-link a {
+    color: #080C0B;
+    text-decoration: none;
+}
+
+.top-link a:hover {
+    border-bottom: 2px solid #F0BC5E;
+
+}
+
+.top-link:nth-child(4) .second-menu {
+    justify-content: flex-start;
+}
+
+.top-link:nth-child(4) .second-menu li {
+    margin-right: 100px;
+}
+
+.top-link:hover .second-menu {
+    top: 5px;
+    transition: all .2s;
+}
+
+/* -- Burger button -- */
+.burger-btn {
+    position: absolute;
+    display: none;
+    top: 35%;
+    right: 25px;
+    width: 20px;
+}
+
+.burger-line {
+    position: absolute;
+    top: 0;
+    height: 2px;
+    width: 25px;
+    background-color: #000;
+    opacity: 1;
+}
+
+.burger-line._second {
+    top: 8px;
+    transition: .35s;
+}
+
+.burger-line._third {
+    top: 8px;
+    transition: .35s;
+}
+
+.burger-line._fourth {
+    top: 16px;
+}
+
+/* -- Close button -- */
+.burger-btn._close .burger-line._first {
+    opacity: 0;
+    top: 8px
+}
+
+.burger-btn._close .burger-line._fourth {
+    opacity: 0;
+    top: 8px
+}
+
+.burger-btn._close .burger-line._second {
+    transform: rotate(45deg);
+    transition: .35s;
+}
+
+.burger-btn._close .burger-line._third {
+    transform: rotate(-45deg);
+    transition: .35s;
+}
+
+/* -- Adaptive menu -- */
+@media(max-width: 768px) {
+    .header {
+        position: relative;
+        padding: 15px 0;
+        z-index: auto;
+    }
+
+    .nav-wrapper {
+        position: static;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .top-menu {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        top: -999px;
+        left: 0;
+        transition: all .5s;
+        z-index: 992;
+    }
+
+    .top-menu a {
+        display: block;
+        padding: 15px 16px;
+    }
+    .top-link a:hover {
+        border: 0;
+    }
+
+    /* -- Show mobile menu -- */
+    .mobile-menu {
+        top: 65px;
+        transition: all .5s;
+    }
+
+    .top-link {
+        position: relative;
+        text-align: center;
+        background-color: #EFEFEF;
+        border: 0;
+        padding: 0;
+    }
+
+    .top-link:hover {
+        transform: scale(1);
+        transition: .2s;
+    }
+}
+
+.contacts__tel {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .contacts__tel {
+        display: none;
+    }
+}

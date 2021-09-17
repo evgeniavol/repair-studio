@@ -1,0 +1,23 @@
+.feedback {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.feedback-title {
+    margin-bottom: 21px;
+}
+@media (max-width: 320px) {
+    .feedback-title {
+        margin-bottom: 15px;
+    }
+}
+.feedback-text {
+    margin-bottom: 67px;
+    line-height: 22px;
+}
+
+@media (max-width: 320px) {
+    .feedback-text {
+        margin-bottom: 40px;
+    }
+}
+
